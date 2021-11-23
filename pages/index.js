@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       const randomIndex = Math.floor(Math.random() * REDIRECTLINKS.length);
-      window.location = REDIRECTLINKS[randomIndex];
+      window.location.replace(REDIRECTLINKS[randomIndex]);
     }, 2000);
   }, []);
 
